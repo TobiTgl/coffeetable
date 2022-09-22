@@ -10,7 +10,7 @@ function App() {
   const html = document.documentElement;
   const context = canvas.getContext("2d")
   
-  const frameCount = 1097;
+  const frameCount = 1120;
   const currentFrame = index => (
     `https://res.cloudinary.com/tobitgl/image/upload/v1663511212/Portfolio/CoffeTable/ersteFinal${index.toString().padStart(4, '0')}.webp`
   )
