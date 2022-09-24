@@ -4,7 +4,7 @@ html {
 
 body {
   height: 3000vh;
-  background: #000;
+  background: #fff;
 }
 
 canvas {
@@ -33,4 +33,12 @@ body::-webkit-scrollbar {
     max-height: 100vh;
     object-fit: cover;
   }
+}
+
+.test{
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  color:#fff;
+  z-index:3;
 }

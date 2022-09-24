@@ -71,7 +71,7 @@ const webOrMobile = (index) =>{
   
   return (
   <>
-    <div></div>  
+    <div className="test">test</div>  
   </>
   );
 }
