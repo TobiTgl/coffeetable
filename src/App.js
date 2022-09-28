@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react';
-
+import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 function App() {
   var canvas = document.createElement('canvas');
@@ -21,7 +24,6 @@ function App() {
 //    `https://res.cloudinary.com/tobitgl/image/upload/v1663511212/Portfolio/CoffeTable/mobile${index.toString().padStart(4, '0')}.webp`
 //  )
 const webOrMobile = (index) =>{
-  console.log(ratio)
   if(ratio > 1){
       return `https://res.cloudinary.com/tobitgl/image/upload/v1663511212/Portfolio/CoffeTable/ersteFinal${index.toString().padStart(4, '0')}.webp`
   }else{
@@ -30,7 +32,6 @@ const webOrMobile = (index) =>{
 }
   
   const preloadImages = () => {
-    console.log(window.innerWidth)
     for (let i = 1; i < frameCount; i++) {
       const img = new Image();
       img.src = currentFrame(i);
@@ -68,10 +69,50 @@ const webOrMobile = (index) =>{
   });
 
   preloadImages()
+
+  const onEnterDim =(event)=>{
+    console.log(event);
+    console.log(document.getElementsByClassName('dimensions'));
+  }
   
   return (
   <>
-    <div className="test">test</div>  
+  <ParallaxProvider>
+  <Parallax className="welcome" speed={500} translateY={[100, -500]}>
+        <h1 >Welcome to the TT Coffee-Table-Book!</h1>  
+      </Parallax>
+    <Parallax className="scroll" translateY={[-200, -50]}>
+        <h1 >Scroll Down</h1>  
+      </Parallax>
+      <Parallax className="down" translateY={[-0, 200]}>
+        <FontAwesomeIcon  icon={faChevronDown} />
+      </Parallax>
+      <Parallax className="down" translateY={[-50, 0]}>
+        <FontAwesomeIcon  icon={faChevronDown} />
+      </Parallax>
+      <Parallax className="blättern" speed={500} translateY={[100, -500]}>
+        <h1 >Including 48 pages of my stunning photography</h1>  
+        <h1 >Compiled from my collection of 45455 images taken in 4 years</h1>  
+      </Parallax>
+      <Parallax className="dimensions" onEnter={(event)=>onEnterDim(event)} >
+        <h1 >Dimensions: 29x29x3cm</h1>  
+      </Parallax>
+      <Parallax className="aurora" speed={500} translateY={[-50, 50]}>
+        <h1 >Printed on premium Fuji crystal paper</h1>   
+      </Parallax>
+      <Parallax className="aurora2" speed={500} translateY={[-50, 300]}>
+        <h1 >For an extremely sharp and detailed photo</h1>   
+      </Parallax>
+      <Parallax className="startrail" speed={500} translateY={[-50, 300]}>
+        <h1 >Immerse yourself in the moment that was captured</h1>   
+      </Parallax>
+      <Parallax className="edition" speed={500} translateY={[-50, 50]}>
+        <h1 >TT Edition #1 | 2018-2022</h1>   
+      </Parallax>
+      <Parallax className="continue" speed={500} translateY={[80, 50]}>
+        <h1 >To be continued...</h1>   
+      </Parallax>
+    </ParallaxProvider>
   </>
   );
 }
