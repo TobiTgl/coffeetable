@@ -103,7 +103,7 @@ const webOrMobile = (index) =>{
         <h1 >For an extremely sharp and detailed photo</h1>   
       </Parallax>
       <Parallax className="startrail" speed={500} translateY={[-50, 300]}>
-        <h1 >Immerse yourself in the moment that was captured</h1>   
+        <h1 >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </h1>   
       </Parallax>
       <Parallax className="edition" speed={500} translateY={[-50, 50]}>
         <h1 >TT Edition #1 | 2018-2022</h1>   
