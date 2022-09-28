@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
