@@ -77,7 +77,7 @@ const webOrMobile = (index) =>{
   return (
   <>
   <ParallaxProvider>
-  <Parallax className="welcome" speed={500} translateY={[100, -500]}>
+  <Parallax className="welcome" translateY={[100, -500]}>
         <h1 >Welcome to the TT Coffee-Table-Book!</h1>  
       </Parallax>
     <Parallax className="scroll" translateY={[-200, -50]}>
@@ -89,26 +89,26 @@ const webOrMobile = (index) =>{
       <Parallax className="down" translateY={[-50, 0]}>
         <FontAwesomeIcon  icon={faChevronDown} />
       </Parallax>
-      <Parallax className="blättern" speed={500} translateY={[100, -500]}>
+      <Parallax className="blättern" translateY={[100, -500]}>
         <h1 >Including 48 pages of my stunning photography</h1>  
         <h1 >Compiled from my collection of 45455 images taken in 4 years</h1>  
       </Parallax>
       <Parallax className="dimensions" onEnter={(event)=>onEnterDim(event)} >
         <h1 >Dimensions: 29x29x3cm</h1>  
       </Parallax>
-      <Parallax className="aurora" speed={500} translateY={[-50, 50]}>
+      <Parallax className="aurora" translateY={[-50, 50]}>
         <h1 >Printed on premium Fuji crystal paper</h1>   
       </Parallax>
-      <Parallax className="aurora2" speed={500} translateY={[-50, 300]}>
+      <Parallax className="aurora2" translateY={[-50, 300]}>
         <h1 >For an extremely sharp and detailed photo</h1>   
       </Parallax>
-      <Parallax className="startrail" speed={500} translateY={[-50, 300]}>
+      <Parallax className="startrail" translateY={[-50, 300]}>
         <h1 >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </h1>   
       </Parallax>
-      <Parallax className="edition" speed={500} translateY={[-50, 50]}>
+      <Parallax className="edition" translateY={[-50, 50]}>
         <h1 >TT Edition #1 | 2018-2022</h1>   
       </Parallax>
-      <Parallax className="continue" speed={500} translateY={[80, 50]}>
+      <Parallax className="continue" translateY={[80, 50]}>
         <h1 >To be continued...</h1>   
       </Parallax>
     </ParallaxProvider>
