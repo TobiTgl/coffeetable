@@ -90,11 +90,11 @@ const webOrMobile = (index) =>{
         <FontAwesomeIcon  icon={faChevronDown} />
       </Parallax>
       <Parallax className="blättern" translateY={[100, -500]}>
-        <h1 >Including 48 pages of my stunning photography</h1>  
-        <h1 >Compiled from my collection of 45455 images taken in 4 years</h1>  
+        <h1 >Includes 48 pages photography</h1>
+        <h1 >compiled from my collection of 45455 images taken in 4 years</h1>
       </Parallax>
       <Parallax className="dimensions" onEnter={(event)=>onEnterDim(event)} >
-        <h1 >Dimensions: 29x29x3cm</h1>  
+        <h1 >Book dimensions: 29x29x3cm</h1>
       </Parallax>
       <Parallax className="aurora" translateY={[-50, 50]}>
         <h1 >Printed on premium Fuji crystal paper</h1>   
