@@ -4,7 +4,7 @@ html {
 
 body {
   height: 3000vh;
-  background: #fff;
+  background: #000;
 }
 
 canvas {
@@ -34,11 +34,102 @@ body::-webkit-scrollbar {
     object-fit: cover;
   }
 }
+.welcome{
+  position: relative;
+  top: 300vh;
 
-.test{
-  position: absolute;
-  top: 200%;
-  left: 50%;
+  font-size: 5vh;
+  font-weight: 700;
   color:#fff;
-  z-index:3;
+  z-index:4;
+  text-align : center;
+}
+.scroll{
+  position: relative;
+  top: 50vh;
+
+  font-size: 4vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.down{
+  position: relative;
+  text-align : center;
+  top: 45vh;
+  font-size: 3vh;
+  z-index:4;
+  color:#fff;
+}
+.blättern{
+  position: relative;
+  top: 560vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:6;
+  text-align : center;
+  pointer-events: none;
+}
+.dimensions{
+  position: relative;
+  top: 1000vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.aurora{
+  position: relative;
+  top: 1800vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.aurora2{
+  position: relative;
+  top: 1800vh;
+
+  font-size: 4vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.startrail{
+  position: relative;
+  top: 2400vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.edition{
+  position: relative;
+  top: 2800vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
+}
+.continue{
+  position: relative;
+  top: 2900vh;
+
+  font-size: 5vh;
+  font-weight: 700;
+  color:#fff;
+  z-index:4;
+  text-align : center;
 }
