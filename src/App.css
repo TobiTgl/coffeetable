@@ -64,13 +64,14 @@ body::-webkit-scrollbar {
 }
 .blättern{
   position: relative;
-  top: 600vh;
+  top: 560vh;
 
   font-size: 5vh;
   font-weight: 700;
   color:#fff;
-  z-index:4;
+  z-index:6;
   text-align : center;
+  pointer-events: none;
 }
 .dimensions{
   position: relative;
